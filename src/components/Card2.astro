@@ -1,0 +1,18 @@
+---
+interface Props {
+	nombre: string;
+	cargo: string;
+	href: string;
+    ig: string
+}
+
+const { href, nombre, cargo, ig} = Astro.props;
+---
+<div class="bg-udea-lg shadow rounded-3xl">
+    <div class="card_image"><img class="rounded-3xl" src={href}></div>
+    <div class="card_content text-udea-blue m-3 px-2">
+      <h1 class="pb-1 text-2xl font-bold">{nombre}</h1>
+      <h2 class="pb-2 text-l font-bold">{cargo}</h2>
+      <a class="rounded hover:animate-pulse" href={ig} target="_blank" rel="noopener"><img src="\ig.svg" alt="Logo IG" width=30 height=30></a>
+    </div>
+</div>

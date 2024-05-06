@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Header from '../sections/Header.astro'
+import Footer from '../sections/Footer.astro'
+import Button from '../components/Button.astro'
+import Button2 from '../components/Button2.astro'
+---
+
+<Layout title="Timeline">
+    <Header/>
+    <div class="lg:flex lg:mx-60 my-10 mx-20 gap-10">
+        <span class="justify-between lg:pb-5">
+        <h1 class="font-bold text-udea-dg text-2xl">CONTACTANOS</h1>
+        <p class="pb-5">We believe in produce. Tasty produce. Produce like:
+
+        Apples. Oranges. Limes. Lemons. Guavas. Carrots. Cucumbers. Jicamas. Cauliflowers. Brussels sprouts. Shallots. Japanese eggplants. Asparagus. Artichokes—Jerusalem artichokes, too. Radishes. Broccoli. Baby broccoli. Broccolini. Bok choy. Scallions. Ginger. Cherries. Raspberries. Cilantro. Parsley. Dill. </p>
+        </span>
+        <span>
+            <Button
+                nombre="Instagram"           
+            />
+            <Button2
+                nombre="Whatsapp"           
+            />
+        </span>
+    </div>
+    <Footer/>
+</Layout>
